@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BpmnParser": {
+      "commandName": "Project",
+      "commandLineArgs": "D:\\work\\bpmn\\page2.bpmn"
+    }
+  }
+}
