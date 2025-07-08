@@ -6,16 +6,16 @@ namespace BpmnParser.Tests
     public class ParserTests
     {
         private const string SampleXml = """
-<definitions xmlns=\"http://www.omg.org/spec/BPMN/20100524/MODEL\">
-  <process id=\"p1\">
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL">
+  <process id="p1">
     <laneSet>
-      <lane id=\"lane1\" name=\"Lane 1\">
+      <lane id="lane1" name="Lane 1">
         <flowNodeRef>task1</flowNodeRef>
       </lane>
     </laneSet>
-    <userTask id=\"task1\" name=\"Task 1\" />
-    <serviceTask id=\"task2\" name=\"Task 2\" />
-    <sequenceFlow id=\"flow1\" sourceRef=\"task1\" targetRef=\"task2\" />
+    <userTask id="task1" name="Task 1" />
+    <serviceTask id="task2" name="Task 2" />
+    <sequenceFlow id="flow1" sourceRef="task1" targetRef="task2" />
   </process>
 </definitions>
 """;
