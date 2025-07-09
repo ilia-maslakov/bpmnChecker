@@ -49,15 +49,15 @@ namespace BpmnParser
                     {
                         extras.Add(string.IsNullOrEmpty(task.FormKey)
                             ? "formKey='<отсутствует>'"
-                            : $"formKey='{task.FormKey}'");
+                            : $"{task.FormKey}");
                     }
                     else if (!string.IsNullOrEmpty(task.FormKey))
                     {
-                        extras.Add($"formKey='{task.FormKey}'");
+                        extras.Add($"{task.FormKey}");
                     }
 
                     if (!string.IsNullOrEmpty(task.Topic))
-                        extras.Add($"topic='{task.Topic}'");
+                        extras.Add($"{task.Topic}");
 
                     if (!string.IsNullOrEmpty(task.MessageRef))
                         extras.Add($"messageRef='{task.MessageRef}'");
