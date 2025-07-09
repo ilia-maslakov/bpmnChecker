@@ -65,7 +65,10 @@ namespace BpmnParser
                 {
                     var id = refNode.InnerText;
                     if (model.AllNodes.TryGetValue(id, out var task))
-                        lane.Tasks.Add(task);
+                    {
+                        if (task.Type is not ("parallelGateway"))
+                            lane.Tasks.Add(task);
+                    }
                 }
 
                 model.Lanes.Add(lane);
